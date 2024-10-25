@@ -1,0 +1,15 @@
+<!-- qr_app/templates/qr_app/qr_list.html -->
+{% extends 'base.html' %}
+{% block content %}
+  <div class="qr_list">
+    <h2>Your QR Codes</h2>
+  <ul>
+    {% for qr in qr_codes %}
+      <li>
+        <img src="{{ qr.qr_code_image.url }}" alt="QR Code">
+        <p>{{ qr.text }}</p>
+      </li>
+    {% endfor %}
+  </ul>
+  </div>
+{% endblock %}

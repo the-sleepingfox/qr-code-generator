@@ -1,2 +1,2 @@
 Django==5.1.2
-segno==1.6.1
+qrcode==8.0
